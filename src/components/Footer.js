@@ -17,12 +17,9 @@ function Footer() {
           <p>01687303056</p>
           <p>01973502006</p>
         </div>
-        <div>
-          <h4>Email</h4>
-          <p>fktraders102@gmail.com</p>
-        </div>
       </div>
       <div className='footer2'>
+        <h5>fktraders102@gmail.com</h5>
         <h4>Grow your business with us.</h4>
         <div>
           <a href="#" class="fa fa-facebook"></a>

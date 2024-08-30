@@ -40,7 +40,6 @@ body {
   color: white;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   padding: 7% 0;
@@ -148,7 +147,7 @@ body {
   padding: 4% 0;
 }
 
-.App .footer .footer1>div>* {
+.App .footer .footer1>div>p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -198,6 +197,10 @@ body {
   }
 
   /* Header */
+  .App .header {
+    flex-wrap: wrap;
+  }
+
   .App .header .lhs h1 {
     font-size: 32px;
   }
@@ -225,9 +228,9 @@ body {
   }
 
   .App .products .products-items img {
-    height: 80px;
-    width: 100px;
-    margin: 2rem 6rem;
+    height: 70px;
+    width: 90px;
+    margin: 2rem 4rem;
   }
 
   .App .products .products-items img:hover {
