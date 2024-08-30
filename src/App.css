@@ -40,6 +40,7 @@ body {
   color: white;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   padding: 7% 0;
@@ -147,7 +148,7 @@ body {
   padding: 4% 0;
 }
 
-.App .footer .footer1>div {
+.App .footer .footer1>div>* {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
