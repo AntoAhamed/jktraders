@@ -1,38 +1,264 @@
-.App {
-  text-align: center;
+body {
+  letter-spacing: 1.5px;
+  word-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: azure;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar */
+.App nav {
+  background-color: rgb(57, 71, 223);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App nav ul {
+  list-style-type: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: end;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px 60px;
+}
+
+.App nav ul li {
+  margin: 5px 45px;
+  padding: 5px;
+}
+
+.App nav ul li :link {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Header */
+.App .header {
+  height: fit-content;
+  width: 100%;
+  background-color: rgb(91, 91, 240);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 7% 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App .header .lhs {
+  padding: 0 7%;
+}
+
+.App .header .lhs h1 {
+  font-size: 46px;
+}
+
+.App .header .lhs p {
+  font-size: 16px;
+  color: rgb(235, 237, 226);
+  opacity: 0.7;
+}
+
+.App .header .rhs {
+  padding: 0 7%;
+}
+
+.App .header .rhs img {
+  height: 360px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px rgb(238, 236, 241);
+  opacity: 0.7;
+}
+
+/* Products */
+
+.App .products .products-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(180, 179, 179);
+  margin: 8% 22%;
+}
+
+.App .products .products-header h1 {
+  color: rgb(182, 182, 182);
+}
+
+.App .products .products-items {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8%;
+}
+
+.App .products .products-items img {
+  height: 120px;
+  width: 150px;
+  margin: 2rem 5rem;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+.App .products .products-items img:hover {
+  height: 140px;
+  width: 170px;
+  margin: 1rem 7rem;
+  transition: 0.3s;
+  box-shadow: 10px 10px 5px rgb(196, 194, 194);
+}
+
+.App .products .products-items-details>div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgb(233, 231, 231);
+  margin: 7% 11%;
+  padding: 2%;
+  border-radius: 10px;
+  transition: 0.3s;
+  color: gray;
+  background-color: aliceblue;
+}
+
+.App .products .products-items-details>div:hover {
+  transition: 0.3s;
+  box-shadow: 10px 10px 5px rgb(229, 229, 229);
+}
+
+.App .products .products-items-details>div img {
+  height: 250px;
+  width: 300px;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+/* Footer */
+.App .footer .footer1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(48, 107, 255);
+  color: white;
+  padding: 4% 0;
+}
+
+.App .footer .footer2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(16, 83, 251);
+  color: white;
+  padding: 1% 0;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 26px;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 25px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 968px) {
+
+  /* Navbar */
+  .App nav {
+    font-size: 14px;
+    font-weight: 520;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .App nav ul {
+    padding: 12px;
+  }
+  
+  .App nav ul li {
+    margin: 5px 25px;
+  }
+
+  /* Header */
+  .App .header .lhs h1 {
+    font-size: 32px;
+  }
+
+  .App .header .lhs p {
+    font-size: 12px;
+  }
+
+  .App .header .rhs {
+    padding: 7%;
+  }
+
+  .App .header .rhs img {
+    height: 160px;
+    width: 200px;
+  }
+
+  /* Products */
+  .App .products .products-header h1 {
+    font-size: 26px;
+  }
+
+  .App .products .products-items {
+    grid-template-columns: auto auto;
+  }
+
+  .App .products .products-items img {
+    height: 80px;
+    width: 100px;
+    margin: 2rem 6rem;
+  }
+
+  .App .products .products-items img:hover {
+    height: 100px;
+    width: 130px;
+    margin: 1rem 5rem;
+  }
+
+  .App .products .products-items-details>div {
+    font-size: 12px;
+    padding: 15px;
+  }
+
+  .App .products .products-items-details>div img {
+    height: 100px;
+    width: 150px;
+    padding: 15px;
+  }
+
+  /* Footer */
+  .App .footer .footer1 {
+    font-size: 12px;
+  }
+
+  .App .footer .footer1>div {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .App .footer .footer2 {
+    font-size: 12px;
+    padding-left: 8px;
+  }
+
+  .fa {
+    font-size: 16px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
   }
 }
