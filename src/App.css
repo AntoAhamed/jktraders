@@ -141,11 +141,16 @@ body {
 .App .footer .footer1 {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
   background-color: rgb(48, 107, 255);
   color: white;
   padding: 4% 0;
+}
+
+.App .footer .footer1>div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .App .footer .footer2 {
@@ -182,11 +187,11 @@ body {
     font-size: 14px;
     font-weight: 520;
   }
-  
+
   .App nav ul {
     padding: 12px;
   }
-  
+
   .App nav ul li {
     margin: 5px 25px;
   }
